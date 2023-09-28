@@ -8,7 +8,7 @@ The infrastructure is composed of the following ressources:
 *  Frontend infrastructure: Contains an S3 bucket configured with static web hosting, alongside a cloudfront distribution, an SSL certificate and a website A record.
 
 
-![alt text]()
+![alt text](https://github.com/huannv93/PROJECT-X/blob/main/deploy/docs/diagram.png)
 
 
 ### Initialization
