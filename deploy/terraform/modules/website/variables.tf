@@ -14,3 +14,6 @@ variable "bucket_log_cf" {
 variable "waf_arn" {
   description = "ARN of AWS WAF ID"
 }
+variable "route53_zone" {
+  description = "Route53 zone name"
+}

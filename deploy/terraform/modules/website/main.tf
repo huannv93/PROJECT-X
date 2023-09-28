@@ -74,10 +74,12 @@ resource "aws_s3_bucket_policy" "read_this" {
 resource "aws_cloudfront_distribution" "this" {
   enabled             = true
   default_root_object = "index.html"
+  aliases = [var.route53_zone]
   logging_config {
     bucket = "${var.bucket_log_cf}.s3.amazonaws.com"
   }
   web_acl_id = var.waf_arn
+
 
   default_cache_behavior {
     allowed_methods        = ["DELETE", "GET", "HEAD", "OPTIONS", "PATCH", "POST", "PUT"]

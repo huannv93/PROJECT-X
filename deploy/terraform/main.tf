@@ -67,6 +67,7 @@ module "website" {
   acm_certificate_arn = var.acm_certificate_arn_region_root
   bucket_log_cf       = var.bucket_log_cf
   waf_arn             = var.waf_arn
+  route53_zone        = var.route53_zone
 }
 
 # Route53 Module
